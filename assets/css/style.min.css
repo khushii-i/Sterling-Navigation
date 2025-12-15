@@ -4774,7 +4774,7 @@ iframe {
     opacity: 0
 }
 
-.brochure {
+/* .brochure {
 
     position: fixed;
     top: 40%;
@@ -4790,7 +4790,38 @@ iframe {
     background-color: var(--p7);
     color: white;
     border-radius: 10px 10px 0px 0px;
+} */
+ .brochure {
+    position: relative;      /* fixed hata diya */
+    top: auto;
+    right: auto;
+
+    transform: none;         /* rotation hata diya */
+    z-index: 1;
+    padding: 10px;
+    font-weight: 800;
+
+    width: 100%;
+    display: flex;
+    justify-content: center; /* center me lane ke liye */
+    margin: 30px 0;          /* upar niche gap */
 }
+.brochure button {
+    background-color: #41c19f;
+    color: #fff;
+    border: none;
+    padding: 12px 28px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.brochure button:hover {
+    background-color: #35a98a;
+    transform: translateY(-2px);
+}
+
 
 .shop-details .single-item .img {
     background: #f4f4f4;
