@@ -4907,6 +4907,7 @@ iframe {
 
 .has-sub:hover .sub-submenu {
     display: block;
+    height: 300px;
 }
 
 /* =========================
