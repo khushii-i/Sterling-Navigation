@@ -8,7 +8,7 @@ document.querySelector("form").addEventListener("submit", async (e) => {
     const message = document.querySelector('textarea[placeholder="Enter a message here..."]').value;
 
     try {
-        const res = await fetch("https://sterling-backend.vercel.app/api/contact", {
+        const res = await fetch("https://sterling-backend.vercel.app/api/contacts", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ name, email, phone,subject , message })
