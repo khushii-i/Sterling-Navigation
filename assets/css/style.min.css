@@ -4829,13 +4829,6 @@ iframe {
     height: 400px;
 }
 
-.shop-details .single-item img {
-    background: #f4f4f4;
-    height: 125px;
-    width: 100%;
-    padding: 1rem;
-}
-
 /* =========================
        -SUB MENU 
 ========================= */
@@ -5090,4 +5083,8 @@ align-items: center;
 justify-content: center;
 font-size: 24px;
 color: #00a886;
+}
+.my-custom-bg{
+    background-color: #00a886;
+    color:#fff;
 }
