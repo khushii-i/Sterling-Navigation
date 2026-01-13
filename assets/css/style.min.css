@@ -3025,7 +3025,7 @@ iframe {
     right: -18px;
     font-size: 18px;
     color: rgba(var(--n2), 1);
-    padding: 0 !important
+    padding: 0 ;
 }
 
 @media(max-width: 767px) {
@@ -4614,7 +4614,7 @@ iframe {
     }
 
     .shop-details .single-item img {
-        height: 80px !important;
+        height: 266px !important;
     }
 }
 
@@ -4792,19 +4792,19 @@ iframe {
     border-radius: 10px 10px 0px 0px;
 } */
  .brochure {
-    position: relative;      /* fixed hata diya */
+    position: relative;      
     top: auto;
     right: auto;
 
-    transform: none;         /* rotation hata diya */
+    transform: none;   
     z-index: 1;
     padding: 10px;
     font-weight: 800;
 
     width: 100%;
     display: flex;
-    justify-content: center; /* center me lane ke liye */
-    margin: 30px 0;          /* upar niche gap */
+    justify-content: left;
+    margin: 30px 0;         
 }
 .brochure button {
     background-color: #41c19f;
@@ -4812,7 +4812,7 @@ iframe {
     border: none;
     padding: 12px 28px;
     font-size: 16px;
-    border-radius: 6px;
+    /* border-radius: 6px; */
     cursor: pointer;
     transition: 0.3s;
 }
@@ -5087,4 +5087,43 @@ color: #00a886;
 .my-custom-bg{
     background-color: #00a886;
     color:#fff;
+    justify-content: left;
+}
+
+/* ===== PRODUCT IMAGE FRAME ===== */
+.shop-details-slider .swiper-slide {
+  height: 380px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.shop-details-slider img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+/* ===== THUMBNAILS ===== */
+.shop-details-carousel .swiper-slide {
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.shop-details-carousel img {
+  max-height: 80px;
+  object-fit: contain;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+  .shop-details-slider .swiper-slide {
+    height: 260px;
+  }
+
+  .shop-details-carousel .swiper-slide {
+    height: 70px;
+  }
 }
