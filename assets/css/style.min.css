@@ -2405,7 +2405,7 @@ select {
 
 .social-area a:hover,
 .social-area a.active {
-    background: rgba(var(--p6), 1)
+    background-color: rgb(119, 118, 118);
 }
 
 .social-area a:hover i,
@@ -2659,7 +2659,7 @@ select {
     transform: translate3d(0px, 0px, 0px)
 }
 
-.mouse-follower {
+/* .mouse-follower {
     z-index: 10
 }
 
@@ -2686,30 +2686,30 @@ select {
     width: 6px;
     background: rgba(var(--p1), 1);
     transition: var(--transition)
-}
+} */
 
-.mouse-follower.hide-cursor span {
+/* .mouse-follower.hide-cursor span {
     border-color: rgba(0, 0, 0, 0);
     background: rgba(0, 0, 0, 0)
-}
+} */
 
-.mouse-follower.highlight-cursor-head {
+/* .mouse-follower.highlight-cursor-head {
     cursor: none
-}
+} */
 
-.mouse-follower.highlight-cursor-head .cursor-outline {
+/* .mouse-follower.highlight-cursor-head .cursor-outline {
     height: 0;
     width: 0
-}
+} */
 
-.mouse-follower.highlight-cursor-head .cursor-dot {
+/* .mouse-follower.highlight-cursor-head .cursor-dot {
     height: 150px;
     width: 150px;
     background: rgba(var(--p1), 1);
     mix-blend-mode: difference
-}
+} */
 
-@media(max-width: 991px) {
+/* @media(max-width: 991px) {
     .mouse-follower.highlight-cursor-head .cursor-dot {
         height: 80px;
         width: 80px
@@ -2737,12 +2737,12 @@ select {
         height: 60px;
         width: 60px
     }
-}
+} */
 
-.highlight-cursor-head,
+/* .highlight-cursor-head,
 .-para {
     cursor: none
-}
+} */
 
 .table thead th,
 .table th {
@@ -4952,6 +4952,7 @@ iframe {
     width: 100%;
     position: relative;
     top: 70px;
+    /* min-height: 60vh; */
 }
 
 .banner-slide {
@@ -5058,11 +5059,11 @@ iframe {
 /* Responsive */
 @media (max-width: 768px) {
     .banner-slide {
-       min-height: auto!important;
-       height: 100% !important;
+        height: 60vh !important;
+        min-height: 300px;
     }
     .banner-section{
-        margin-top: 100px;;
+        margin-top: 12px;;
     }
 
     .banner-content h2 {
@@ -5125,5 +5126,19 @@ color: #00a886;
 
   .shop-details-carousel .swiper-slide {
     height: 70px;
+  }
+}
+
+.bannerSwiper,
+.swiper-wrapper,
+.swiper-slide {
+    height: 100%;
+}
+
+
+@media (min-width: 992px) {
+  .footer-section .container-fluid {
+    padding-left: 100px;
+    padding-right: 80px;
   }
 }
