@@ -4101,6 +4101,7 @@ iframe {
     }
 }
 
+/* card hover effect  */
 .event-section .single-box::before {
     content: "";
     position: absolute;
@@ -5141,4 +5142,59 @@ color: #00a886;
     padding-left: 100px;
     padding-right: 80px;
   }
+}
+
+/* my card hover effect  */
+.card-hover .single-box::before {
+    content: "";
+    position: absolute;
+    background-color: #48c19e;
+    width: 100%;
+    height: 0%;
+    transition: all .7s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: -1
+}
+.card-hover .single-box:hover::before {
+    height: calc(100% + 40px)
+}
+
+.card-hover .single-box:hover .btn-area {
+    opacity: 1;
+    height: initial;
+    margin: 0 !important
+}
+
+.card-hover .single-box:hover * {
+    color: rgba(var(--n1), 1)
+}
+
+.card-hover.second .single-box::before {
+    background-color: #48c19e;
+}
+
+.card-hover.second .single-box:hover::before {
+    height: 100%
+}
+
+/* Image container */
+.product-img {
+    width: 100%;
+    height: 180px;            /* yaha height control hogi */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* Image itself */
+.product-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;      /* image cut nahi hogi */
+}
+
+/* Agar thoda zoom-style look chahiye */
+.card-hover .single-box:hover .product-img img {
+    transform: scale(1.05);
+    transition: 0.4s ease;
 }
