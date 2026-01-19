@@ -3025,7 +3025,7 @@ iframe {
     right: -18px;
     font-size: 18px;
     color: rgba(var(--n2), 1);
-    padding: 0 ;
+    padding: 0;
 }
 
 @media(max-width: 767px) {
@@ -4792,12 +4792,12 @@ iframe {
     color: white;
     border-radius: 10px 10px 0px 0px;
 } */
- .brochure {
-    position: relative;      
+.brochure {
+    position: relative;
     top: auto;
     right: auto;
 
-    transform: none;   
+    transform: none;
     z-index: 1;
     padding: 10px;
     font-weight: 800;
@@ -4805,8 +4805,9 @@ iframe {
     width: 100%;
     display: flex;
     justify-content: left;
-    margin: 30px 0;         
+    margin: 30px 0;
 }
+
 .brochure button {
     background-color: #41c19f;
     color: #fff;
@@ -4858,7 +4859,7 @@ iframe {
 
 .submenu a {
     padding: 10px 20px;
-    
+
 }
 
 .submenu-inner {
@@ -4966,11 +4967,11 @@ iframe {
     justify-content: center;
 }
 
- .banner-bg {
+.banner-bg {
     position: absolute;
     width: 100%;
     height: 90%;
-    object-fit:cover;
+    object-fit: cover;
     top: 0;
     left: 0;
     z-index: 0;
@@ -4984,6 +4985,7 @@ iframe {
 .banner-content {
     position: relative;
     z-index: 2;
+    font-size: large;
     text-align: center;
     color: #fff;
     padding: 20px;
@@ -5063,8 +5065,10 @@ iframe {
         height: 60vh !important;
         min-height: 300px;
     }
-    .banner-section{
-        margin-top: 12px;;
+
+    .banner-section {
+        margin-top: 12px;
+        ;
     }
 
     .banner-content h2 {
@@ -5075,59 +5079,61 @@ iframe {
         font-size: 15px;
     }
 }
+
 .icon-round {
-width: 55px;
-height: 55px;
-background: #e7fff6;
-border-radius: 50%;
-display: flex;
-align-items: center;
-justify-content: center;
-font-size: 24px;
-color: #00a886;
+    width: 55px;
+    height: 55px;
+    background: #e7fff6;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: #00a886;
 }
-.my-custom-bg{
+
+.my-custom-bg {
     background-color: #00a886;
-    color:#fff;
+    color: #fff;
     justify-content: left;
 }
 
 /* ===== PRODUCT IMAGE FRAME ===== */
 .shop-details-slider .swiper-slide {
-  height: 380px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    height: 380px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .shop-details-slider img {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
 }
 
 /* ===== THUMBNAILS ===== */
 .shop-details-carousel .swiper-slide {
-  height: 90px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .shop-details-carousel img {
-  max-height: 80px;
-  object-fit: contain;
+    max-height: 80px;
+    object-fit: contain;
 }
 
 /* ===== MOBILE ===== */
 @media (max-width: 768px) {
-  .shop-details-slider .swiper-slide {
-    height: 260px;
-  }
+    .shop-details-slider .swiper-slide {
+        height: 260px;
+    }
 
-  .shop-details-carousel .swiper-slide {
-    height: 70px;
-  }
+    .shop-details-carousel .swiper-slide {
+        height: 70px;
+    }
 }
 
 .bannerSwiper,
@@ -5138,10 +5144,10 @@ color: #00a886;
 
 
 @media (min-width: 992px) {
-  .footer-section .container-fluid {
-    padding-left: 100px;
-    padding-right: 80px;
-  }
+    .footer-section .container-fluid {
+        padding-left: 100px;
+        padding-right: 80px;
+    }
 }
 
 /* my card hover effect  */
@@ -5154,6 +5160,7 @@ color: #00a886;
     transition: all .7s cubic-bezier(0.4, 0, 0.2, 1);
     z-index: -1
 }
+
 .card-hover .single-box:hover::before {
     height: calc(100% + 40px)
 }
@@ -5179,7 +5186,7 @@ color: #00a886;
 /* Image container */
 .product-img {
     width: 100%;
-    height: 180px;            /* yaha height control hogi */
+    height: 180px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -5190,11 +5197,21 @@ color: #00a886;
 .product-img img {
     width: 100%;
     height: 100%;
-    object-fit: contain;      /* image cut nahi hogi */
+    object-fit: contain;
 }
 
-/* Agar thoda zoom-style look chahiye */
 .card-hover .single-box:hover .product-img img {
     transform: scale(1.05);
     transition: 0.4s ease;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 90vh;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1;
 }
